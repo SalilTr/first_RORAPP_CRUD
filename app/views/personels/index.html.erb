@@ -1,0 +1,14 @@
+<h1>Hello world</h1>
+<% @items.each do |personel| %>
+  <div>
+    <!-- Display the 'title' attribute for each personel -->
+    <p>Title: <%= personel.title %></p>
+    <p>Title: <%= personel.body %></p>
+    <!-- <a href="/personels/hello">link for hello</a> -->
+    <!-- <a href="/hello.html.erb">link for hello</a> -->
+
+    <%= link_to 'Edit', edit_personel_path(personel) %>
+    <%= link_to "Delete", personel_path(personel),  data: { "turbo-method": :delete } %>
+
+  </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+<% end %>
